@@ -10,6 +10,9 @@ const ProductCard = ({products}) => {
             <View style={styles.innerContainer}>
                 <Text style={styles.productname}>{products.title}</Text>
                 <Text style={styles.productprice}>{products.price}</Text>
+                {products.inStock === false && <Text style={styles.stockStatus}>STOKTA YOK</Text>}
+                {products.inStock === true && <Text style={styles.stockStatus}></Text>}
+                
             </View>
 
         </View>

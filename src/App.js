@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TextInput, FlatList, SafeAreaView} from 'react-native';
+import {Text, StyleSheet, TextInput, FlatList, SafeAreaView} from 'react-native';
 import ProductCard from './components/ProductCard';
 import productslist from './productsList.json';
 
@@ -14,7 +14,6 @@ function App() {
      <FlatList
         data={productslist}
         numColumns={2}
-              
         renderItem={renderProduct}
      />
     </SafeAreaView>

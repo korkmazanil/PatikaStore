@@ -16,12 +16,19 @@ export default StyleSheet.create({
   },
   productname: {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 14,
   },
   productprice: {
     marginTop: 3,
+    padding: 3,
   },
   innerContainer:{
     padding:5,
+  },
+  stockStatus:{
+    fontSize: 16,
+    color: 'red',
+    fontWeight: 'bold',
+    padding: 1,
   }
 });
